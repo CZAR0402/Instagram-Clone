@@ -1,0 +1,107 @@
+.explore {
+  width: 100%;
+  padding: 20px 20px 0;
+  background-color: #fafafa;
+}
+
+.explore__grid {
+  max-width: 935px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.explore__post {
+  position: relative;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.explore__post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.explore__postOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.explore__post:hover .explore__postOverlay {
+  opacity: 1;
+}
+
+.explore__postStats {
+  display: flex;
+  gap: 30px;
+  color: white;
+}
+
+.explore__postStat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.explore__postStat i {
+  font-size: 18px;
+}
+
+.explore__postStat span {
+  font-weight: 600;
+}
+
+.explore__postType {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.explore__postType.multiple {
+  right: 10px;
+}
+
+.explore__post.video .explore__postType {
+  font-size: 24px;
+}
+
+@media (max-width: 935px) {
+  .explore__grid {
+    gap: 3px;
+  }
+  
+  .explore {
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .explore__postStats {
+    gap: 20px;
+  }
+  
+  .explore__postStat {
+    gap: 4px;
+  }
+  
+  .explore__postStat i {
+    font-size: 16px;
+  }
+  
+  .explore__postStat span {
+    font-size: 14px;
+  }
+} 

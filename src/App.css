@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #fafafa;
+  color: #262626;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.app__body {
+  display: flex;
+}
+
+.app__content {
+  flex: 1;
+  margin-left: 245px; /* Same as sidebar width */
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Font Awesome Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-mode .app {
+  background-color: #121212;
+}
+
+body.dark-mode .app__body {
+  background-color: #121212;
+}
+
+body.dark-mode .app__content {
+  background-color: #121212;
+}
+
+/* Dark mode styles for components */
+body.dark-mode .sidebar {
+  background-color: #121212;
+  border-right: 1px solid #262626;
+}
+
+body.dark-mode .sidebar__menuItem {
+  color: #fff;
+}
+
+body.dark-mode .sidebar__menuItem:hover {
+  background-color: #262626;
+}
+
+body.dark-mode .more__container {
+  background-color: #121212;
+  border-color: #262626;
+}
+
+body.dark-mode .more__header h2,
+body.dark-mode .more__section h3,
+body.dark-mode .more__option span,
+body.dark-mode .more__option i {
+  color: #fff;
+}
+
+body.dark-mode .more__option:hover {
+  background-color: #262626;
+}
+
+body.dark-mode .more__toggle label {
+  background-color: #262626;
+}
+
+body.dark-mode .more__toggle input:checked + label {
+  background-color: #0095f6;
+}
+
+body.dark-mode .more__logoutButton {
+  color: #ed4956;
+}
+
+body.dark-mode .more__logoutButton:hover {
+  background-color: #262626;
+}
+
+/* Dark mode styles for login page */
+body.dark-mode .login {
+  background-color: #121212;
+}
+
+body.dark-mode .login__container,
+body.dark-mode .login__signup {
+  background-color: #121212;
+  border-color: #262626;
+}
+
+body.dark-mode .login__inputGroup input {
+  background-color: #121212;
+  border-color: #262626;
+  color: #fff;
+}
+
+body.dark-mode .login__inputGroup input:focus {
+  border-color: #a8a8a8;
+}
+
+body.dark-mode .login__divider::before,
+body.dark-mode .login__divider::after {
+  background-color: #262626;
+}
+
+body.dark-mode .login__divider span {
+  color: #8e8e8e;
+}
+
+body.dark-mode .login__signup p {
+  color: #8e8e8e;
+}
+
+body.dark-mode .login__signup a {
+  color: #0095f6;
+}
+
+/* Dark mode styles for other components */
+body.dark-mode .post,
+body.dark-mode .profile,
+body.dark-mode .search,
+body.dark-mode .explore,
+body.dark-mode .reels,
+body.dark-mode .notifications,
+body.dark-mode .create {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-mode .post__header,
+body.dark-mode .post__actions,
+body.dark-mode .post__caption,
+body.dark-mode .post__comments {
+  border-color: #262626;
+}
+
+body.dark-mode .post__username,
+body.dark-mode .post__caption,
+body.dark-mode .post__comment {
+  color: #fff;
+}
+
+body.dark-mode .post__likes,
+body.dark-mode .post__timestamp {
+  color: #8e8e8e;
+} 

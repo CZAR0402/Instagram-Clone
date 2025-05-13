@@ -1,0 +1,148 @@
+.more {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.more__container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.more__header {
+  padding: 20px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.more__header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.more__section {
+  padding: 20px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.more__section h3 {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.more__options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.more__option {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.more__option:hover {
+  background-color: #fafafa;
+}
+
+.more__option i:first-child {
+  width: 24px;
+  margin-right: 12px;
+  color: #262626;
+  font-size: 18px;
+}
+
+.more__option span {
+  flex: 1;
+  font-size: 14px;
+  color: #262626;
+}
+
+.more__option i:last-child {
+  color: #8e8e8e;
+  font-size: 14px;
+}
+
+.more__toggle {
+  position: relative;
+  width: 40px;
+  height: 20px;
+}
+
+.more__toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.more__toggle label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.more__toggle label:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.more__toggle input:checked + label {
+  background-color: #0095f6;
+}
+
+.more__toggle input:checked + label:before {
+  transform: translateX(20px);
+}
+
+.more__logout {
+  padding: 20px;
+  text-align: center;
+}
+
+.more__logoutButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: none;
+  border: none;
+  color: #ed4956;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.more__logoutButton:hover {
+  background-color: #fafafa;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .more {
+    padding: 10px;
+  }
+  
+  .more__container {
+    box-shadow: none;
+  }
+} 

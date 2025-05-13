@@ -1,0 +1,140 @@
+.messages {
+  display: flex;
+  height: calc(100vh - 60px);
+  background-color: white;
+}
+
+.messages__sidebar {
+  width: 350px;
+  border-right: 1px solid #dbdbdb;
+}
+
+.messages__header {
+  padding: 20px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.messages__header h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.messages__conversations {
+  overflow-y: auto;
+  height: calc(100% - 60px);
+}
+
+.messages__conversation {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #fafafa;
+}
+
+.messages__conversation:hover {
+  background-color: #fafafa;
+}
+
+.messages__conversation.active {
+  background-color: #fafafa;
+}
+
+.messages__conversation img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.messages__conversationInfo {
+  flex: 1;
+}
+
+.messages__conversationInfo h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.messages__conversationInfo p {
+  font-size: 14px;
+  color: #8e8e8e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.messages__timestamp {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.messages__chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages__chatHeader {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.messages__chatHeader img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.messages__chatHeader h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.messages__chatMessages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.messages__chatInput {
+  display: flex;
+  padding: 20px;
+  border-top: 1px solid #dbdbdb;
+}
+
+.messages__chatInput input {
+  flex: 1;
+  border: 1px solid #dbdbdb;
+  border-radius: 22px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.messages__chatInput button {
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 22px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.messages__chatInput button:hover {
+  background-color: #0086e6;
+}
+
+.messages__noChat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #8e8e8e;
+} 

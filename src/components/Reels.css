@@ -1,0 +1,147 @@
+.reels {
+  width: 100%;
+  height: 100vh;
+  background-color: #fafafa;
+  padding-top: 60px;
+}
+
+.reels__container {
+  max-width: 935px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.reels__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.reels__headerIcon {
+  font-size: 24px;
+  color: #262626;
+}
+
+.reels__header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.reels__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 28px;
+}
+
+.reels__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reels__video {
+  position: relative;
+  aspect-ratio: 9/16;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.reels__video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reels__playIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+}
+
+.reels__video:hover .reels__playIcon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.reels__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.reels__video:hover .reels__overlay {
+  opacity: 1;
+}
+
+.reels__stats {
+  display: flex;
+  gap: 16px;
+  color: white;
+}
+
+.reels__stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.reels__stat i {
+  font-size: 16px;
+}
+
+.reels__stat span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reels__info {
+  padding: 0 8px;
+}
+
+.reels__username {
+  font-weight: 600;
+  font-size: 14px;
+  color: #262626;
+  margin-right: 8px;
+}
+
+.reels__caption {
+  font-size: 14px;
+  color: #8e8e8e;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .reels__grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+  }
+  
+  .reels__container {
+    padding: 0 16px;
+  }
+} 
